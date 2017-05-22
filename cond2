@@ -1,0 +1,19 @@
+#!/bin/bash
+
+str1=""
+str2="Danny"
+str3="Hello"
+
+if [ "$str1" ]; then
+	echo "its null"
+fi
+
+if [ -z "$str1" ]; then
+	echo "its has no value"
+fi
+
+if [ "$str2" > "$str3" ]; then
+	echo "$str2 is greater than $str3"
+else 
+	echo "$str3 is greater than $str2"
+fi
