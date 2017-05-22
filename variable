@@ -1,0 +1,41 @@
+#!/bin/bash
+
+myName='Paul Daniel Raj'
+
+echo "My name is $myName"
+declare -r Num1=5
+
+num2=4
+
+num3=$((Num1+num2))
+num4=$((Num1-num2))
+num5=$((Num1*num2))
+num6=$((Num1/num2))
+
+echo "Add: $num3"
+echo "sub: $num4"
+echo "mul: $num5"
+echo "div: $num6"
+echo "exp: $((5**2))"
+echo "mod: $((5%2))"
+
+rand=6
+let rand+=5
+#$((rand+=5))
+echo $rand
+
+echo "rand++ = $(( rand++ ))"
+echo "++rand = $(( ++rand ))"
+echo "rand-- = $(( rand-- ))"
+echo "--rand = $(( --rand ))"
+
+num7=1.2
+num8=5.1
+num9=$(python -c "print $num7+$num8")
+echo $num9
+
+cat<< END
+This is a text
+written in
+multiple lines
+END

@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Wassup? Age? " age
+
+if [ $age -ge 20 ]
+then
+	echo "Hey greater than 20"
+elif [ $age -le 20 ]
+then
+	echo "Hello less than 20"
+else
+	echo "Nah"
+fi

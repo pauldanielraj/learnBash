@@ -1,0 +1,38 @@
+#!/bin/bash
+
+myName="Paul Daniel Raj"
+
+echo "My Name is $myName"
+
+declare -r Num1=5
+
+num2=4
+
+echo "Add: $((Num1 + num2))"
+echo "Sub: $((Num1 - num2))"
+echo "Mul: $((Num1 * num2))"
+echo "Div: $((Num1 / num2))"
+echo "Exp: $((Num1 ** num2))"
+echo "Mod: $((Num1 % num2))"
+
+rand=5
+
+let rand+=2
+
+echo $rand
+
+echo $((rand++))
+echo $((++rand))
+echo $((rand--))
+echo $((--rand))
+
+num3=4.2
+num4=7.1
+
+echo $(python -c "print $num3 + $num4")
+
+cat<< END
+This is a
+multi line
+comment
+END

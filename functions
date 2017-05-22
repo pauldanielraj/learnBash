@@ -1,0 +1,35 @@
+#!/bin/bash
+
+getDate(){
+
+	date
+	return
+}
+
+getDate
+
+name="Paul"
+
+printName(){
+
+local	name="Danny"
+
+	return
+}
+
+printName
+
+echo $name
+
+sumNumber(){
+
+	local sum=$(($1+$2))
+
+	echo $sum
+
+	return
+}
+
+result=$(sumNumber 2 3)
+
+echo $result
